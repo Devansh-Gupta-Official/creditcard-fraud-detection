@@ -24,3 +24,12 @@ A Random Forest classifier is employed to model the data. The classifier is trai
 ### Step 6: Decision Tree Model
 Similarly, a Decision Tree classifier is utilized for modeling. The classifier is trained on the training set and evaluated on the testing set. The accuracy score and a confusion matrix are generated for analysis.
 
+### Step 7: Sampling
+Given the imbalanced nature of the dataset, two sampling techniques are explored:
+
+### Undersampling and Training the Deep Learning Model on it
+Undersampling involves reducing the number of instances in the over-represented class (non-fraudulent transactions). A balanced dataset is created by randomly selecting a subset of non-fraudulent transactions equal to the number of fraudulent transactions. The deep learning model is then trained on this balanced dataset.
+
+### Oversampling (SMOTE) and Training the Deep Learning Model on it
+Oversampling involves increasing the number of instances in the under-represented class (fraudulent transactions). The Synthetic Minority Over-sampling Technique (SMOTE) is applied to generate synthetic instances of the minority class. The deep learning model is trained on this oversampled dataset.
+
