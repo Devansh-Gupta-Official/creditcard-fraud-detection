@@ -32,15 +32,24 @@ The model is compiled using the Adam optimizer and binary crossentropy loss func
 ## Step 4: Evaluating the Deep Learning Model
 The trained deep learning model is evaluated on the testing set to assess its performance. Metrics such as loss and accuracy are calculated and printed.
 
+![image](https://github.com/Devansh-Gupta-Official/creditcard-fraud-detection/assets/100591612/0ce42673-0be8-4211-bfb9-7361e9734475)
+
+
 ## Step 5: Random Forest Model
 A Random Forest classifier is employed to model the data. The classifier is trained on the training set and evaluated on the testing set. The accuracy score and a confusion matrix are generated for further analysis.
 ### Results
 The accuracy score of the Random Forest model is calculated, providing an indication of its performance on the testing data. Additionally, a confusion matrix is generated to visualize the model's ability to correctly classify fraudulent and non-fraudulent transactions.
 
+![image](https://github.com/Devansh-Gupta-Official/creditcard-fraud-detection/assets/100591612/c467cc02-5abf-423d-a586-0909b3351b84)
+
+
 ## Step 6: Decision Tree Model
 Similarly, a Decision Tree classifier is utilized for modeling. The classifier is trained on the training set and evaluated on the testing set. The accuracy score and a confusion matrix are generated for analysis.
 ### Results
 The accuracy score and confusion matrix help assess the Decision Tree model's effectiveness in identifying fraudulent transactions.
+
+![image](https://github.com/Devansh-Gupta-Official/creditcard-fraud-detection/assets/100591612/cb12c9e9-e492-4e08-9ca1-1e77abd8f079)
+
 
 ## Step 7: Sampling
 Given the imbalanced nature of the dataset, two sampling techniques are explored:
@@ -50,10 +59,15 @@ Undersampling involves reducing the number of instances in the over-represented 
 #### Results
 The model's performance on the undersampled testing set is evaluated using a confusion matrix, providing insights into its ability to detect both fraudulent and non-fraudulent transactions.
 
+![image](https://github.com/Devansh-Gupta-Official/creditcard-fraud-detection/assets/100591612/0b6b976f-4d93-4ccd-9f8e-2a875b198bd4)
+
+
 ### Oversampling (SMOTE) and Training the Deep Learning Model on it
 Oversampling involves increasing the number of instances in the under-represented class (fraudulent transactions). The Synthetic Minority Over-sampling Technique (SMOTE) is applied to generate synthetic instances of the minority class. The deep learning model is trained on this oversampled dataset.
 #### Results
 The model's performance on the oversampled testing set is assessed using a confusion matrix. This evaluation helps understand the model's performance when trained on a more balanced dataset.
+
+![image](https://github.com/Devansh-Gupta-Official/creditcard-fraud-detection/assets/100591612/1a025f37-9716-4fa0-911a-50226cd6bbcd)
 
 
 ## Conclusion
