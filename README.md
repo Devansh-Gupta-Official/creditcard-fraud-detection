@@ -14,6 +14,21 @@ The first step involves importing necessary libraries to facilitate data analysi
 
 ### Data
 The dataset (creditcard.csv) is loaded into a pandas DataFrame using pd.read_csv(). This dataset presumably contains anonymized information about credit card transactions.
+#### Data Columns
+The dataset contains the following columns:
+
+1. Time: The seconds elapsed between this transaction and the first transaction in the dataset.
+2. V1 to V28: Anonymized features resulting from a PCA transformation. Due to privacy concerns, the exact nature of these features is undisclosed.
+3. Amount: The transaction amount.
+4. Class: Binary variable indicating whether the transaction is fraudulent (1) or not (0).
+
+#### Class Distribution
+The dataset is highly imbalanced, with a vast majority of transactions being non-fraudulent. The class distribution is as follows:
+
+- Non-Fraudulent (Class 0): 99.83%
+- Fraudulent (Class 1): 0.17%
+
+This imbalance poses a challenge for developing models that can effectively identify and classify fraudulent transactions.
 
 ## Step 2: Data Preprocessing
 ### Feature Scaling
